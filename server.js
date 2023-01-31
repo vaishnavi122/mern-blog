@@ -6,6 +6,7 @@ require("colors")
 db()
 const app = express()
 app.use(express.json())// middleware of json it hepls to run post method
+app.use = (express.static("public"))
 app.use(cors())
 
 app.use("/blog", require("./routes/blogRoutes"))
